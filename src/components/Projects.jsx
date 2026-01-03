@@ -42,16 +42,17 @@ const projects = [
         color: "from-orange-500/30 to-red-500/30",
         colSpan: "md:col-span-2 md:row-span-1",
         live: "https://ashishgajbhiv.github.io/Advance-todo/"
-    }
-    // {
-    //     id: 5,
-    //     title: "Portfolio",
-    //     description: "Personal portfolio website.",
-    //     tech: ["React", "Motion"],
-    //     github: "https://github.com/AshishGajbhiv",
-    //     color: "from-pink-500/30 to-rose-500/30",
-    //     colSpan: "md:col-span-1 md:row-span-1",
-    // },
+    },
+    {
+        id: 5,
+        title: "Portfolio Builder",
+        description: "A simple and stylish portfolio builder that lets developers showcase their work in minutes.",
+        tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+        github: "https://github.com/AshishGajbhiv/Portfolio-builder",
+        color: "from-pink-500/30 to-rose-500/30",
+        colSpan: "md:col-span-1 md:row-span-1",
+        live: "https://ashishgajbhiv.github.io/Portfolio-builder/"
+    },
 ];
 
 const ProjectCard = ({ project }) => {
