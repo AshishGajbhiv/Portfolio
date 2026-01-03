@@ -21,7 +21,7 @@ const projects = [
         github: "https://github.com/AshishGajbhiv/Portfolio",
         color: "from-cyan-500/30 to-blue-500/30",
         colSpan: "md:col-span-1 md:row-span-1",
-        live: "https://github.com/AshishGajbhiv/Portfolio"
+        live: "https://AshishGajbhiv.github.io/Portfolio"
     },
     {
         id: 3,
