@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaFileDownload } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +33,13 @@ const Navbar = () => {
                                     {link.name}
                                 </a>
                             ))}
+                            <a
+                                href="resume.pdf"
+                                download="Ashish_Resume.pdf"
+                                className="flex items-center gap-2 text-cyan-400 border border-cyan-400/50 hover:bg-cyan-400 hover:text-black px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-[0_0_10px_rgba(34,211,238,0.2)] hover:shadow-[0_0_20px_rgba(34,211,238,0.4)]"
+                            >
+                                <FaFileDownload size={14} /> Resume
+                            </a>
                         </div>
                     </div>
 
@@ -93,6 +101,16 @@ const Navbar = () => {
                             {link.name}
                         </a>
                     ))}
+                    <div className="pt-2 px-3 pb-2">
+                        <a
+                            href="resume.pdf"
+                            download="Ashish_Resume.pdf"
+                            className="flex items-center justify-center gap-2 w-full text-cyan-400 border border-cyan-400/50 hover:bg-cyan-400 hover:text-black px-4 py-3 rounded-xl text-base font-medium transition-all duration-300"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            <FaFileDownload size={18} /> Download Resume
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>

@@ -53,6 +53,16 @@ const projects = [
         colSpan: "md:col-span-1 md:row-span-1",
         live: "https://ashishgajbhiv.github.io/Portfolio-builder/"
     },
+    {
+        id: 6,
+        title: "Image to Pdf Converter",
+        description: "Convert multiple images into one PDF in a single click.",
+        tech: ["React", "Tailwind CSS", "Framer Motion", "Vite", "jspdf", "dnd-kit"],
+        github: "https://github.com/AshishGajbhiv/image-to-pdf",
+        color: "from-pink-500/30 to-rose-500/30",
+        colSpan: "md:col-span-1 md:row-span-1",
+        live: "https://ashishgajbhiv.github.io/image-to-pdf/"
+    },
 ];
 
 const ProjectCard = ({ project }) => {
@@ -128,7 +138,7 @@ const Projects = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                     transition={{ staggerChildren: 0.1 }}
-                    className="grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[220px]"
+                    className="grid grid-cols-1 md:grid-cols-3 gap-4 md:auto-rows-[300px]"
                 >
                     {projects.map((project) => (
                         <ProjectCard key={project.id} project={project} />
